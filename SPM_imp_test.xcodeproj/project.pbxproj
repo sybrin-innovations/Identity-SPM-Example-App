@@ -13,6 +13,7 @@
 		76BF43382BA965B10079F459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BF43362BA965B10079F459 /* Main.storyboard */; };
 		76BF433A2BA965B50079F459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BF43392BA965B50079F459 /* Assets.xcassets */; };
 		76BF433D2BA965B50079F459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BF433B2BA965B50079F459 /* LaunchScreen.storyboard */; };
+		76BF43462BA9662D0079F459 /* Sybrin.Identity in Frameworks */ = {isa = PBXBuildFile; productRef = 76BF43452BA9662D0079F459 /* Sybrin.Identity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BF43462BA9662D0079F459 /* Sybrin.Identity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SPM_imp_test;
+			packageProductDependencies = (
+				76BF43452BA9662D0079F459 /* Sybrin.Identity */,
+			);
 			productName = SPM_imp_test;
 			productReference = 76BF432D2BA965B10079F459 /* SPM_imp_test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 76BF43242BA965B10079F459;
+			packageReferences = (
+				76BF43442BA9662D0079F459 /* XCRemoteSwiftPackageReference "Sybrin" */,
+			);
 			productRefGroup = 76BF432E2BA965B10079F459 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76BF43442BA9662D0079F459 /* XCRemoteSwiftPackageReference "Sybrin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sybrin-innovations/Sybrin.Identity";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76BF43452BA9662D0079F459 /* Sybrin.Identity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76BF43442BA9662D0079F459 /* XCRemoteSwiftPackageReference "Sybrin" */;
+			productName = Sybrin.Identity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76BF43252BA965B10079F459 /* Project object */;
 }

@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "sybrin.common",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sybrin-innovations/Sybrin.Common",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a76e48a15570d8b2d0cf724c07d255ecc57cc99d"
+      }
+    },
+    {
+      "identity" : "sybrin.identity",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sybrin-innovations/Sybrin.Identity",
+      "state" : {
+        "branch" : "main",
+        "revision" : "85fdee8b146e6d505ccdb6048e36acf81fbe741e"
+      }
+    }
+  ],
+  "version" : 2
+}
